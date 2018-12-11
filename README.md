@@ -1,5 +1,7 @@
 ## Zadanie rekrutacyjne - Junior Frontend Developer<br>
 <br>
+![projekt graficzny](https://github.com/Nemethe/zadanie-rekrutacyjne-react/blob/master/_projekt/1%20projekt.jpg?raw=true)
+<br>
 Uruchomienie projektu<br>
 `npm i`<br>
 `npm run start`<br>
