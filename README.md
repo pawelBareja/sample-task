@@ -1,44 +1,27 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Zadanie rekrutacyjne - Junior Frontend Developer<br>
+<br>
+Uruchomienie projektu<br>
+`npm i`<br>
+`npm run start`<br>
+<br>
+Wraz z odpaleniem projektu uruchomiony zostaje prosty serwer http<br>
+W konstruktorze w src/App.js pobierany jest json http://127.0.0.1:8080/pets-data.json ,<br>
+następnie wrzucany do state.<br>
+<br>
+Twoim zadaniem jest zakodowanie projektu graficznego w html/css oraz zapewnienie<br>
+za pomocą Reacta dynamicznej obsługi: dodawania, usuwania, filtracji oraz sortowania elementów listy.<br>
+<br>
+PSD znajdziesz w katalogu `_projekt`<br>
+<br>
+Projekt dzieli się na dwa widoki: główna lista oraz popup z formularzem.<br>
+<br>
+Po wczytaniu na liście muszą wyświetlać się 3 zwierzęta z pets-data.json<br>
+X służy do usuwania elementu listy<br>
+Popup powinien zostać wyświetlony po kliknięciu na guzik +<br>
+Po ponownym kliknięciu na guzik sortowania, kolejność musi się odwracać<br>
+Filtr gatunków powinien zapewniać możliwość powrotu do wyświetlania wszystkich gatunków<br>
+Wszystkie inputy w formularzu poza jedzeniem są wymagane, zapewnij też walidację pola ‘Wiek’, może ono przyjmować wyłącznie liczby całkowite<br>
+<br>
+Poza zdjęciami zwierząt nie używaj w projekcie innych plików graficznych, możesz zastosować dowolną czcionkę. Zadanie musi zostać wykonane z użyciem React, bazuj na istniejącym kodzie.<br>
+<br>
+Rozwiązanie umieść w serwisie github i udostępnij za pomocą adresu url.
