@@ -1,11 +1,14 @@
 import React from "react";
+import FoodContainer from "./FoodContainer";
 import "./card.css";
 
 const Card = ({ item }) => {
   console.log(item.favFoods);
   return (
     <div className="card">
-      <div className="card__image">{/* <img src="" alt=""/> */}</div>
+      <div className="card__image">
+        <img src={item.photo} alt={item.name} />
+      </div>
 
       <div className="card__content">
         <div className="card__text--top">
@@ -24,16 +27,7 @@ const Card = ({ item }) => {
         </div>
 
         <div className="card__text--bottom">
-          {item.favFoods && (
-            <div>
-              <p>Ulubione jedzenie:</p>
-              <ul>
-                {item.favFoods.map((n) => (
-                  <li dangerouslySetInnerHTML={{ __html: n }} />
-                ))}
-              </ul>
-            </div>
-          )}
+          <FoodContainer food={item.favFoods} />
         </div>
       </div>
     </div>

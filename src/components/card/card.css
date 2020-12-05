@@ -1,9 +1,13 @@
 .card {
+  padding: 10px;
+  margin: 0 auto;
   position: relative;
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
   flex-wrap: wrap;
   width: 90vw;
+  max-width: 1400px;
   height: auto;
   border: 1px solid gray;
 }
@@ -13,5 +17,27 @@
   min-width: 400px;
 }
 
-.card__text {
+.card__image img {
+  width: 100%;
+  height: auto;
+}
+
+.card__content {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.card__content ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.card__content ul li {
+  display: inline-block;
+  border: 1px solid black;
+  padding: 3px;
+  margin: 0 3px;
 }
