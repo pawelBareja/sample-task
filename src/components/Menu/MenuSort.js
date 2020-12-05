@@ -3,8 +3,13 @@ import React from "react";
 const MenuSort = ({ pets, handleSortAge }) => {
   return (
     <div>
-      <p>Sortowanie</p>
-      <button onClick={handleSortAge}>Wiek</button>
+      <p>Sortowsanie</p>
+      <button name="birthYear" onClick={handleSortAge}>
+        Wiek
+      </button>
+      <button name="name" onClick={handleSortAge}>
+        Imię
+      </button>
     </div>
   );
 };

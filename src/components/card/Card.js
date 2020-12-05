@@ -3,7 +3,6 @@ import FoodContainer from "./FoodContainer";
 import "./card.css";
 
 const Card = ({ item }) => {
-  console.log(item.favFoods);
   return (
     <div className="card">
       <div className="card__image">

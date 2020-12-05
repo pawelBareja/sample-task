@@ -18,22 +18,23 @@ class App extends Component {
       .then(this.setState.bind(this));
   }
 
-  handleSortAge = () => {
+  handleSortAge = (e) => {
+    const { name } = e.target;
     const { pets } = this.state;
     const sorted = !this.state.sorted;
     const sortedPets = [...pets];
 
     if (!this.state.sorted) {
-      sortedPets.sort((a, b) => (a.birthYear > b.birthYear ? 1 : -1));
+      sortedPets.sort((a, b) => (a.name > b.name ? 1 : -1));
+      console.log(sortedPets.sort((a, b) => (a.name > b.name ? 1 : -1)));
     } else {
-      sortedPets.sort((a, b) => (a.birthYear < b.birthYear ? 1 : -1));
+      sortedPets.sort((a, b) => (a.name < b.name ? 1 : -1));
     }
 
     this.setState({
       pets: sortedPets,
       sorted: sorted,
     });
-    console.log(sortedPets);
   };
 
   render() {
