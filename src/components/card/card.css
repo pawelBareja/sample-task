@@ -1,0 +1,17 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90vw;
+  height: auto;
+  border: 1px solid gray;
+}
+
+.card__image {
+  width: 30%;
+  min-width: 400px;
+}
+
+.card__text {
+}
