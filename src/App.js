@@ -37,13 +37,23 @@ class App extends Component {
     });
   };
 
+  handleRemove = (id) => {
+    console.log(id);
+    const { pets } = this.state;
+    const reducedPets = pets.filter((item) => item.name !== id);
+
+    this.setState({
+      pets: reducedPets,
+    });
+  };
+
   render() {
     const { pets } = this.state;
 
     return (
       <div className="App">
         <Topmenu pets={pets} handleSortAge={this.handleSortAge} />
-        <CardBox pets={pets} />
+        <CardBox pets={pets} handleRemove={this.handleRemove} />
       </div>
     );
   }
